@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Speed Test</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>⚡ Internet Speed Test ⚡</h1>
+
+    <div class="card">
+      <button id="startBtn" class="btn">Start Test</button>
+      <button id="againBtn" class="btn secondary" style="display:none;">Test Again</button>
+
+      <!-- Progress bar -->
+      <div id="progressBar" style="display:none;">
+        <div id="progress"></div>
+      </div>
+
+      <!-- Animated Gauges -->
+      <div class="gauges">
+        <canvas id="downloadGauge" width="200" height="200"></canvas>
+        <canvas id="uploadGauge" width="200" height="200"></canvas>
+        <canvas id="pingGauge" width="150" height="150"></canvas>
+      </div>
+    </div>
+
+    <h2>📊 Recent Results</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Download</th>
+            <th>Upload</th>
+            <th>Ping</th>
+            <th>Server</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

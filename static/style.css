@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  display: inline-block;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00ff87, #60efff);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+.btn.secondary {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: #fff;
+}
+
+#progressBar {
+  width: 100%;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  margin: 20px 0;
+  height: 12px;
+}
+#progress {
+  height: 12px;
+  width: 0%;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff00cc, #333399);
+  transition: width 0.3s ease;
+}
+
+.gauges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+canvas {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.table-container {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+th {
+  background: rgba(255,255,255,0.1);
+}
